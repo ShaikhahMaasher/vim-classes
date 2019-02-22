@@ -67,6 +67,13 @@ Basics: wWbBeE
 	B - Backward to the next beginning of a WORD
 	e - Forward to the next end of word
 	E - Forward to the next end of WORD
+	0 - Move to the zeroth character of the line 
+	^ - Move to the first non-blank character of the line 
+	$ - Move to the last character of the line 
+	
+	gg - Go to the top of file
+	G - Go to the end of file
+	gg v G - Select all file (cmd+a)
 
 Slightly less basic: fFtT
 All follow [(n)um]<verb><n(o)un> syntax
@@ -95,8 +102,11 @@ Searching
 Copy/Paste
 ===
 
-	y - Yank. Example: yw (yank word)
-	p - paste after cursor
-	P - paste before cursor
+	y  - Yank. Example: yw (yank word)
+	yy - Yank (copy) a line 
+	n(th) yy > copy n(th) lines
+	
+	p  - paste after cursor
+	P  - paste before cursor
 
 # vim: set syn=mkd :
